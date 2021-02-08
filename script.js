@@ -18,7 +18,7 @@ function animate(id){
     case "main_contact":
       document.getElementById("main_about").style.display = "none";
       document.getElementById("main_home").style.display = "none";
-      document.getElementById("main_contact").style.display = "";
+     
       var id_build = '#' + id;
       $(id_build).animate2('slideInRight');
     break;
@@ -32,6 +32,6 @@ window.onload = function(){
 
 document.getElementById('menu_home').addEventListener('click', function(){animate('main_home');}, false);
 document.getElementById('menu_about').addEventListener('click', function(){animate("main_about");}, false);
-document.getElementById('menu_contact').addEventListener('click', function(){animate("main_contact");}, false);
 
 }
+
